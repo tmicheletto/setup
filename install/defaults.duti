@@ -1,0 +1,24 @@
+# default applications for specific file types
+# aka UTIs (Uniform Type Identifiers) see http://qmths.be/utis
+
+# bundle_id                     uti | url_scheme | extension | MIME_type        role
+
+com.microsoft.VSCode            public.plain-text                               all
+com.microsoft.VSCode            .md                                             all
+com.microsoft.VSCode            .log                                            all
+com.microsoft.VSCode            .xml                                            all
+com.microsoft.VSCode            .json                                           all
+com.microsoft.VSCode            .ndjson                                         all
+com.microsoft.VSCode            .sha256                                         all
+com.microsoft.VSCode            .pom                                            all
+com.microsoft.VSCode            .tf                                             all
+com.microsoft.VSCode            .yaml                                           all
+com.microsoft.VSCode            .py                                             all
+com.colliderli.iina             org.matroska.mkv                                all
+com.colliderli.iina             public.mpeg-4                                   all
+com.apple.iWork.Numbers         .csv                                            all
+com.apple.iWork.Numbers         .xls                                            all
+com.apple.iWork.Numbers         .xlsx                                           all
+com.AceMoney874954830.wineskin  .ofx                                            all
+com.AceMoney874954830.wineskin  .qif                                            all
+company.thebrowser.Browser      .svg                                            all

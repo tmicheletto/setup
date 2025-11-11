@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # remove the packages that are already in the environment so we can install them.
+      # we need them because they are dependencies of packages in the Brewfile
+      # see https://github.com/actions/runner-images
+      - name: reset runner environment
+        run: |
+          rm -f /usr/local/bin/aws
+          rm -f /usr/local/bin/aws_completer
+          rm -f /usr/local/bin/go
+          rm -f /usr/local/bin/gofmt
+          rm "$HOME/.gitconfig"
+          brew unlink git
+
+      - name: fix build to work with setup-mac
+        run: |
+          mkdir -p "$HOME/.zshrc.d"
+          touch "$HOME/.zshrc.d/auth.plugin.zsh"
+          touch "$HOME/.zshrc.d/aws-doctor.plugin.zsh"
+          touch "$HOME/.zshrc.d/functions.plugin.zsh"
+          touch "$HOME/.zshrc.d/git-doctor.plugin.zsh"
+          touch "$HOME/.zshrc.d/migrations.plugin.zsh"
+          touch "$HOME/.zshrc.d/setup.plugin.zsh"
+
+      - name: install.sh
+        run: ./install.sh
+
+      - name: Start sshx session on failed manual run or retry
+        if: ${{ failure() && (github.event_name == 'workflow_dispatch' || github.run_attempt > 1) }}
+        run: curl -sSf https://sshx.io/get | sh && sshx

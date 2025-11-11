@@ -1,0 +1,4 @@
+# nbdime
+*.ipynb	diff=jupyternotebook
+*.ipynb	merge=jupyternotebook
+* merge=mergiraf

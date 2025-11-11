@@ -1,0 +1,54 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "alt+cmd+l",
+        "command": "editor.action.formatDocument",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "git.push"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.tasks.reRunTask"
+    },
+    {
+        "key": "cmd+s",
+        "command": "-workbench.action.files.saveAll"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "cmd+p",
+        "command": "-editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+
+    {
+        "key": "alt+cmd+left",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "alt+cmd+right",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "tab",
+        "command": "tabout",
+        "when": "editorTextFocus && !editorHasMultipleSelections && !inSnippetMode && !inlineSuggestionVisible && !suggestWidgetVisible && !tabShouldAcceptInlineEdit"
+    },
+    {
+        "key": "tab",
+        "command": "-tabout",
+        "when": "editorTextFocus && !editorHasMultipleSelections && !inSnippetMode && !inlineSuggestionVisible && !suggestWidgetVisible"
+    }
+]

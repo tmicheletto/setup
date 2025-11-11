@@ -1,0 +1,121 @@
+# setup tools
+brew "stow"
+brew "duti"
+brew "antidote"
+
+# cli tools
+brew "fzf"
+brew "ripgrep"
+brew "wget"
+brew "jq"
+brew "jless"
+brew "yq"
+brew "scmpuff"
+brew "sd"
+brew "gh"
+brew "zoxide"
+brew "diff-so-fancy"
+brew "saulpw/vd/visidata"
+brew "hyperfine"
+brew "grpcurl"
+brew "pstree"
+brew "direnv"
+brew "dust"
+
+# encryption/security
+brew "age"
+## gnu-getopt and tree are needed for passage
+brew "gnu-getopt"
+brew "tree"
+cask "1password-cli"
+cask "1password"
+
+# dev tools
+brew "shellcheck"
+brew "nvim"
+cask "visual-studio-code"
+## for vscode symbol generation
+brew "ctags"
+brew "hashicorp/tap/terraform"
+brew "pandoc"
+brew "wiggle"
+
+# source control
+## later version than apple git
+brew "git"
+brew "git-lfs"
+brew "jj"
+brew "mergiraf"
+
+# docker
+cask "docker-desktop"
+brew "hadolint"
+brew "crane"
+brew "dive"
+
+# google cloud cli
+cask "gcloud-cli"
+
+# python
+brew "python@3.12"
+brew "python@3.13"
+brew "python@3.14"
+brew "pyenv"
+brew "pipx"
+brew "uv"
+
+# needed for building some python packages
+brew "automake"
+brew "libtool"
+
+# node
+brew "node"
+brew "yarn"
+brew "fnm"
+
+# java
+# cask "temurin@11"
+
+# golang
+brew "go"
+brew "gopls"
+brew "staticcheck"
+cask "goreleaser/tap/goreleaser"
+
+# mac desktop apps
+cask "calibre"
+cask "google-drive"
+cask "google-chrome" unless system "[[ -d '/Applications/Google Chrome.app' ]]"
+cask "iterm2"
+cask "cleanshot"
+cask "macbreakz"
+cask "iina"
+
+# essential
+vscode "Cardinal90.multi-cursor-case-preserve"
+vscode "davidanson.vscode-markdownlint"
+vscode "esbenp.prettier-vscode"
+vscode "exiasr.hadolint"
+vscode "foxundermoon.shell-format"
+vscode "ms-python.python"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "redhat.vscode-yaml"
+vscode "tamasfe.even-better-toml"
+vscode "tekumara.typos-vscode"
+vscode "timonwong.shellcheck"
+vscode "charliermarsh.ruff"
+vscode "rust-lang.rust-analyzer"
+vscode "bierner.markdown-preview-github-styles"
+
+# other
+vscode "adpyke.vscode-sql-formatter"
+vscode "hashicorp.terraform"
+vscode "kddejong.vscode-cfn-lint"
+vscode "mhutchie.git-graph"
+vscode "mikestead.dotenv"
+vscode "njpwerner.autodocstring"
+vscode "sourcery.sourcery"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "tomoyukim.vscode-mermaid-editor"
+vscode "ziyasal.vscode-open-in-github"
+vscode "google.geminicodeassist"

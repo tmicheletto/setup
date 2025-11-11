@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# IntelliJ
+
+.idea/
+*.iml
+
+# Metals
+
+.metals/
+.bloop/
+
+# Python
+
+.pytype/
+.mypy_cache/
+.pytest_cache/
+*.egg-info/
+__pycache__/
+venv/
+.venv/
+
+# Java
+
+target/
