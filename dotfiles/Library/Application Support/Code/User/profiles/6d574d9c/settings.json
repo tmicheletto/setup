@@ -1,0 +1,13 @@
+{
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.fixAll": ["source.unusedImports"],  
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.defaultColorDecorators": "never",
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "off"
+    },
+    "claudeCode.preferredLocation": "panel"
+}

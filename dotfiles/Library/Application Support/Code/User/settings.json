@@ -306,4 +306,7 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  "geminicodeassist.project": "starry-pipe-bzftk",
+  "claudeCode.preferredLocation": "panel",
+  "chat.disableAIFeatures": true,
 }

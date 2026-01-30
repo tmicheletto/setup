@@ -53,6 +53,9 @@ brew "hadolint"
 brew "crane"
 brew "dive"
 
+# aws cli
+brew "awscli"
+
 # google cloud cli
 cask "gcloud-cli"
 
